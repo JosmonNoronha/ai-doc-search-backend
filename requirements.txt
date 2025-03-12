@@ -6,3 +6,4 @@ requests
 python-dotenv
 PyMuPDF
 python-docx
+faiss-cpu
