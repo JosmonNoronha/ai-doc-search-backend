@@ -26,6 +26,10 @@ from services.summarize_service import summarize_document
 async def startup_event():
     await initialize_index()  # ✅ Initialize FAISS index
 
+@app.get("/")
+async def root():
+    return {"message": "FastAPI is running!"}
+
 
 ### 📌 2. Upload and Save Files ###
 @app.post("/upload/")
