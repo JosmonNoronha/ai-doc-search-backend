@@ -5,4 +5,4 @@ pymongo
 requests
 python-dotenv
 PyMuPDF
-
+python-docx
