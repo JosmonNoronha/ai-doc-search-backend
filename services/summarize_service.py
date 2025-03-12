@@ -2,7 +2,8 @@ import requests
 import os
 
 API_URL = "https://api.together.xyz/v1/chat/completions"
-API_KEY = "tgp_v1_6iE1IkPFRxungUcRrCJvbgO1LPfSjZBBaAKdbQMdmDo"  # Store securely
+API_KEY = os.getenv("API_KEY")  # Get API Key from environment
+ # Store securely
 
 def summarize_document(text):
     headers = {
